@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+  <class>qSlicerVertRegModuleWidget</class>
+  <widget class="qSlicerWidget" name="qSlicerVertRegModuleWidget">
+    <property name="geometry">
+      <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>525</width>
+        <height>319</height>
+      </rect>
+    </property>
+    <property name="windowTitle">
+      <string>Form</string>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+        <widget class="ctkCollapsibleButton" name="CTKCollapsibleButton" native="true">
+          <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+            </sizepolicy>
+          </property>
+          <property name="text" stdset="0">
+            <string>Crop Volume</string>
+          </property>
+          <layout class="QFormLayout" name="verticalLayout_3">
+            <property name="fieldGrowthPolicy">
+              <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+            </property>
+            <property name="verticalSpacing">
+              <number>6</number>
+            </property>
+            <property name="margin">
+              <number>4</number>
+            </property>
+            <item row="0" column="0">
+              <widget class="QLabel" name="InputVolumeLabel">
+                <property name="text">
+                  <string>Input volume:</string>
+                </property>
+              </widget>
+            </item>
+            <item row="0" column="1">
+              <widget class="qMRMLNodeComboBox" name="InputVolumeComboBox">
+                <property name="sizePolicy">
+                  <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                  </sizepolicy>
+                </property>
+                <property name="nodeTypes">
+                  <stringlist>
+                    <string>vtkMRMLScalarVolumeNode</string>
+                  </stringlist>
+                </property>
+                <property name="noneEnabled">
+                  <bool>false</bool>
+                </property>
+                <property name="addEnabled">
+                  <bool>false</bool>
+                </property>
+                <property name="renameEnabled">
+                  <bool>true</bool>
+                </property>
+              </widget>
+            </item>
+            <item>
+              <widget class="qSlicerVertRegFooBarWidget" name="FooBar" native="true"/>
+            </item>
+          </layout>
+        </widget>
+      </item>
+      <item>
+        <widget class="QPushButton" name="CropButton">
+          <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+            </sizepolicy>
+          </property>
+          <property name="text">
+            <string>Crop</string>
+          </property>
+        </widget>
+      </item>
+      <item>
+        <spacer name="verticalSpacer">
+          <property name="orientation">
+            <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+            <size>
+              <width>0</width>
+              <height>0</height>
+            </size>
+          </property>
+        </spacer>
+      </item>
+      <item>
+        <widget class="ctkCollapsibleButton" name="CTKCollapsibleButton_2" native="true">
+          <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+            </sizepolicy>
+          </property>
+          <property name="text" stdset="0">
+            <string>Project Volume</string>
+          </property>
+          <layout class="QFormLayout" name="verticalLayout_4">
+            <property name="fieldGrowthPolicy">
+              <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+            </property>
+            <property name="verticalSpacing">
+              <number>6</number>
+            </property>
+            <property name="margin">
+              <number>4</number>
+            </property>
+            <item row="0" column="0">
+              <widget class="QLabel" name="InputVolumeLabel">
+                <property name="text">
+                  <string>Output volume:</string>
+                </property>
+              </widget>
+            </item>
+            <item row="0" column="1">
+              <widget class="qMRMLNodeComboBox" name="ProjectionComboBox">
+                <property name="sizePolicy">
+                  <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                  </sizepolicy>
+                </property>
+                <property name="nodeTypes">
+                  <stringlist>
+                    <string>vtkMRMLScalarVolumeNode</string>
+                  </stringlist>
+                </property>
+                <property name="noneEnabled">
+                  <bool>false</bool>
+                </property>
+                <property name="addEnabled">
+                  <bool>true</bool>
+                </property>
+                <property name="renameEnabled">
+                  <bool>true</bool>
+                </property>
+                <property name="removeEnabled">
+                  <bool>false</bool>
+                </property>
+                <property name="selectNodeUponCreation">
+                  <bool>true</bool>
+                </property>
+              </widget>
+            </item>
+            <item>
+              <widget class="qSlicerVertRegFooBarWidget" name="FooBar" native="true"/>
+            </item>
+          </layout>
+        </widget>
+      </item>
+      <item>
+        <widget class="QPushButton" name="ProjectionButton0">
+          <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+            </sizepolicy>
+          </property>
+          <property name="text">
+            <string>Project (DRR)</string>
+          </property>
+        </widget>
+      </item>
+      <item>
+        <widget class="QPushButton" name="ProjectionButton1">
+          <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+            </sizepolicy>
+          </property>
+          <property name="text">
+            <string>Project (DRR) 5</string>
+          </property>
+        </widget>
+      </item>
+      <item>
+        <widget class="QPushButton" name="ProjectionButton11">
+          <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+            </sizepolicy>
+          </property>
+          <property name="text">
+            <string>Project (DRR) 15</string>
+          </property>
+        </widget>
+      </item>
+      <item>
+        <widget class="QPushButton" name="ProjectionButton12">
+          <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+            </sizepolicy>
+          </property>
+          <property name="text">
+            <string>Project (DRR) 25</string>
+          </property>
+        </widget>
+      </item>
+      <item>
+        <widget class="QPushButton" name="ProjectionButton2">
+          <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+            </sizepolicy>
+          </property>
+          <property name="text">
+            <string>Project (Filter)</string>
+          </property>
+        </widget>
+      </item>
+      <item>
+        <widget class="QPushButton" name="ProjectionButton3">
+          <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+            </sizepolicy>
+          </property>
+          <property name="text">
+            <string>Project 5</string>
+          </property>
+        </widget>
+      </item>
+      <item>
+        <widget class="QPushButton" name="ProjectionButton4">
+          <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+            </sizepolicy>
+          </property>
+          <property name="text">
+            <string>Project 15</string>
+          </property>
+        </widget>
+      </item>
+      <item>
+        <widget class="QPushButton" name="ProjectionButton5">
+          <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+            </sizepolicy>
+          </property>
+          <property name="text">
+            <string>Project 25</string>
+          </property>
+        </widget>
+      </item>
+      <item>
+        <widget class="QPushButton" name="RegisterButton">
+          <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+            </sizepolicy>
+          </property>
+          <property name="text">
+            <string>Register</string>
+          </property>
+        </widget>
+      </item>
+      <item>
+        <widget class="QPushButton" name="RegisterButton2">
+          <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+            </sizepolicy>
+          </property>
+          <property name="text">
+            <string>Register Euler</string>
+          </property>
+        </widget>
+      </item>
+      <item>
+        <widget class="QPushButton" name="RegisterButton3">
+          <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+            </sizepolicy>
+          </property>
+          <property name="text">
+            <string>Automatic Registration</string>
+          </property>
+        </widget>
+      </item>
+      <item>
+        
+        <spacer name="verticalSpacer">
+          <property name="orientation">
+            <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+            <size>
+              <width>0</width>
+              <height>0</height>
+            </size>
+          </property>
+        </spacer>
+      </item>
+    </layout>
+  </widget>
+  <customwidgets>
+    <customwidget>
+      <class>qSlicerWidget</class>
+      <extends>QWidget</extends>
+      <header>qSlicerWidget.h</header>
+      <container>1</container>
+    </customwidget>
+    <customwidget>
+      <class>ctkCollapsibleButton</class>
+      <extends>QWidget</extends>
+      <header>ctkCollapsibleButton.h</header>
+      <container>1</container>
+    </customwidget>
+    <customwidget>
+      <class>qSlicerVertRegFooBarWidget</class>
+      <extends>QWidget</extends>
+      <header>qSlicerVertRegFooBarWidget.h</header>
+      <container>1</container>
+    </customwidget>
+  </customwidgets>
+  <resources/>
+  <connections>
+    <connection>
+      <sender>qSlicerVertRegModuleWidget</sender>
+      <signal>mrmlSceneChanged(vtkMRMLScene*)</signal>
+      <receiver>InputVolumeComboBox</receiver>
+      <slot>setMRMLScene(vtkMRMLScene*)</slot>
+      <hints>
+        <hint type="sourcelabel">
+          <x>245</x>
+          <y>4</y>
+        </hint>
+        <hint type="destinationlabel">
+          <x>279</x>
+          <y>103</y>
+        </hint>
+      </hints>
+    </connection>
+    <connection>
+      <sender>qSlicerVertRegModuleWidget</sender>
+      <signal>mrmlSceneChanged(vtkMRMLScene*)</signal>
+      <receiver>ProjectionComboBox</receiver>
+      <slot>setMRMLScene(vtkMRMLScene*)</slot>
+      <hints>
+        <hint type="sourcelabel">
+          <x>245</x>
+          <y>4</y>
+        </hint>
+        <hint type="destinationlabel">
+          <x>279</x>
+          <y>103</y>
+        </hint>
+      </hints>
+    </connection>
+  </connections>
+</ui>
