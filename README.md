@@ -1,2 +1,2 @@
 # SlicerDRRGenerator
-An Extension for 3D Slicer that allows generation and registration of Digitally Reconstructed Radiographs
+This is an extension for the open-source medical imaging application 3D Slicer. This extension allows the user to generate a Digitally Reconstructed Radiograph (a 'simulated X-Ray') from a CT scan. This has a wide range of applications, but this project was intended to be used for registration algorithms during interventional radiologic procedures. Once the DRR is generated, it is registered to intra-operative fluoroscopic images to account for minute changes in patient positioning.
